@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<states>
+    <state>
+        <name>Andaman and Nicobar Islands</name>
+    </state>
+    <state>
+        <name>Andhra Pradesh</name>
+    </state>
+    <state>
+        <name>Arunachal Pradesh</name>
+    </state>
+    <state>
+        <name>Assam</name>
+    </state>
+    <state>
+        <name>Bihar</name>
+    </state>
+    <state>
+        <name>Chandigarh</name>
+    </state>
+    <state>
+        <name>Chhattisgarh</name>
+    </state>
+    <state>
+        <name>Dadra and Nagar Haveli</name>
+    </state>
+    <state>
+        <name>Daman and Diu</name>
+    </state>
+    <state>
+        <name>Delhi</name>
+    </state>
+    <state>
+        <name>Goa</name>
+    </state>
+    <state>
+        <name>Gujarat</name>
+    </state>
+    <state>
+        <name>Haryana</name>
+    </state>
+    <state>
+        <name>Himachal Pradesh</name>
+    </state>
+    <state>
+        <name>Jammu and Kashmir</name>
+    </state>
+    <state>
+        <name>Jharkhand</name>
+    </state>
+    <state>
+        <name>Karnataka</name>
+    </state>
+    <state>
+        <name>Kerala</name>
+    </state>
+    <state>
+        <name>Lakshadweep</name>
+    </state>
+    <state>
+        <name>Madhya Pradesh</name>
+    </state>
+    <state>
+        <name>Maharashtra</name>
+    </state>
+    <state>
+        <name>Manipur</name>
+    </state>
+    <state>
+        <name>Meghalaya</name>
+    </state>
+    <state>
+        <name>Mizoram</name>
+    </state>
+    <state>
+        <name>Nagaland</name>
+    </state>
+    <state>
+        <name>Orissa</name>
+    </state>
+    <state>
+        <name>Pondicherry</name>
+    </state>
+    <state>
+        <name>Punjab</name>
+    </state>
+    <state>
+        <name>Rajasthan</name>
+    </state>
+    <state>
+        <name>Sikkim</name>
+    </state>
+    <state>
+        <name>Tamil Nadu</name>
+    </state>
+    <state>
+        <name>Telangana</name>
+    </state>
+    <state>
+        <name>Tripura</name>
+    </state>
+    <state>
+        <name>Uttaranchal</name>
+    </state>
+    <state>
+        <name>Uttar Pradesh</name>
+    </state>
+    <state>
+        <name>West Bengal</name>
+    </state>
+</states>

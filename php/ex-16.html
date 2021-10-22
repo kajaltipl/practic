@@ -1,0 +1,86 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+.error {color: #FF0000;} 
+</style>  
+</head>  
+<body>  
+    
+
+<form action="ex-16.php" method="post" enctype="multipart/form-data">
+              
+              
+  
+                    <label for="firstName">First Name:</label> <span class="error"> *</span>
+                    <input type="text" name="fname" id="firstName">
+                    <label for="lastName">Last Name:</label> <span class="error"> *</span>
+                    <input type="text" name="lname" id="lastName">
+                    <label for="mobile">mobile:</label> <span class="error"> *</span>
+                    <input type="text" name="mobile">
+                    <label for="password">Password:</label> <span class="error"> *</span> 
+                    <input type="text" name="password" >
+                    <label for="password">Conform password:</label> <span class="error"> *</span>
+                    <input type="text" name="cpwd"> 
+                    <label for="city">City:</label> <span class="error"> *</span>
+                    <input type="text" name="city">
+                    <label for="state">State</label> <span class="error"> *</span>
+                    <input type="text" name="state"> 
+                    <label for="country">Country:</label> <span class="error"> *</span>
+                    <input type="text" name="country">
+                    <label for="country">Choose your Profile Pic</label> *</span>
+                    <input type="file" name="pic"/> 
+                    <input type="submit" value="Submit">
+                    
+</form>
+
+</body>
+</html>
+
+           
+      
+      
+      
+                  

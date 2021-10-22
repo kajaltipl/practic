@@ -1,0 +1,175 @@
+Exercise1
+
+create a one file hello.php display table id, name,designation,inert date, create date,status add three datas/records.
+
+Exercise2
+
+create a one file mycallhello.php display hello.php content through div id, demo and call with ajax.
+
+Exercise3
+
+search hello.php file which you have made in above exercise insert in that one text box about mycall.php through ajax. put search bar on top which search by the name.table call customer id, name , designation, created date,inside status active/in active use the serch through ajax.
+
+Exercise 4
+
+insert 50 records in php with the for loop.
+
+Exercise 5
+
+place pagination for the records which shows 10 records per page.
+
+Exercise 6
+
+create a one  from to get the birthday of user display how old user in terms of user.
+
+Exercise 7
+
+create  a form which contains two date fields on displays the result on the page.
+
+Exercise 8
+
+display time of the new York  city current time.
+
+Exercise 9
+
+display time of the new Asia, Calcutta current time.
+
+Exercise 10
+
+write a one paragraph which contain 100 words find the specific word  and count that word how much it is repeated in whole paragraph. Replace the word with your name. Replace the remaining last string.
+
+
+Exercise 11
+
+Current date and time with standard format yyyy/mm/dd/ time
+
+Exercise 12
+
+crate a one form  which ask the user for the date , add another
+
+ field to add the add dates. display the sum of dates in mm/dd(weeks)
+
+Exercise 13
+
+ create a class which name is cars. Give two parameters/properties model & make. Create constructor to assign the value store this data into cookies. create/insert at least three records.
+
+Exercise 14
+
+create a table which is made for car insert fields car_id,name&modal. store above exercise in the database.
+
+Exercise 15
+
+Display Ex_14  in tabular format and make  a field on the page which searches records and give pagination to fetched records.
+
+Exercise 16
+
+Create a one form which insert data of user like first name, last name, password, confirm password, profile pic,  city, state, country and submit field. Create customer table and insert/send the data into database.
+
+Exercise 17
+
+Create login screen ask for email and password. check with customer table and validate the user. if user validated redirect them  to the login page. if no then give error.
+
+Exercise 18
+
+send thank you email to newly registered customer in the tabular manner.
+
+Exercise 19
+
+create a product table which contains product_name, product_id,product_desc,product_image,product_status,parent_product_catid,parent_catid and parent_catid_status. and perform CRUD operation.
+
+Exercise 20
+
+on dashboard display status, total product,total categories, with parent product categorize with count.
+
+Exercise 21
+
+On dashboard display bar graph on basic of the product, and pie graph on basic of the categorize using (JPgraph).
+
+Exercise 22
+
+add sub menu, setting, on click edit profile.
+
+Exercise 23
+
+change password facility.
+
+Exercise 24
+Create a welcome page which shows on top bar display image icon , welcome and name.
+
+Exercise 25
+
+create home page without login user can search products , display categories on top. Default display all products by by category wise and give add to cart button.
+
+Exercise 26
+
+create view cart page.
+
+Exercise 27
+
+Create checkout page.
+
+Exercise 28
+
+Create a page which stores and display the billing, shipping address, city , state ,zip etc of the customer.
+
+Exercise 29
+
+in product table give one product add images to gallery by clicking on ask to upload multiple images on specific product.
+
+Exercise 30
+
+create product display , title, description, price, and add to card details.
+
+Exercise 31
+
+while adding images set default image and main image.
+
+Exercise 32
+
+display image gallery in description.
+
+Exercise 33
+
+create a page for the forgot password.
+
+Exercise 34
+
+Place an advance search on product with modal window.
+
+Exercise 35
+
+create an one page contact us name, email address, mobile,description , submit.
+
+Exercise 36
+
+create a feedback form in feedback page on top drop down, website,container, ui and speed.
+
+Exercise 37
+
+display contact and feedback to login user.
+
+Exercise 38
+
+give facility to customer to create poll ,poll title,poll option.
+
+Exercise 39
+
+display poll on home page on bottom.
+
+Exercise 40
+
+store poll result in text file.
+
+Exercise 41
+
+store poll on database. create a table for storing ip address of polar date and time ,option selected.
+
+Exercise 42
+
+display poll to customer with bar chart in percentage
+
+Exercise 43
+
+convert ex_7 and ex_6 into drag and drop.
+
+download admin panel for php

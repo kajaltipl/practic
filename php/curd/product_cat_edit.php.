@@ -1,0 +1,72 @@
+<?php
+// include database connection file
+include_once("conn.php");
+
+// Check if form is submitted for user update, then redirect to homepage after update
+if(isset($_POST['update']))
+{
+	$c_id = $_POST['c_id'];
+    $c_name=$_POST['c_name'];
+	$parent_cat_id = $_POST['parent_cat_id'];
+	$c_status = $_POST['c_status'];
+
+	// update user data
+	$result = mysqli_query($conn, "UPDATE pro_cat SET c_name='$c_name',parent_cat_id='$parent_cat_id',c_status='$c_status' WHERE c_id = $c_id");
+
+	// Redirect to homepage to display updated user in list
+	header("Location: product_cat.php");
+}
+?>
+<?php
+// Display selected user data based on id
+// Getting id from url
+$c_id = $_GET['c_id'];
+
+// Fetech user data based on id
+$result = mysqli_query($conn, "SELECT * FROM pro_cat WHERE c_id = $c_id");
+
+while($user_data = mysqli_fetch_array($result))
+{
+	$c_name = $user_data['c_name'];
+	$parent_cat_id = $user_data['parent_cat_id'];
+	$c_status = $user_data['c_status'];
+}
+?>
+<html>
+<head>
+	<title>Category Edit Data</title>
+</head>
+
+<body>
+	<a href="product_cat.php">Product Category</a>
+	<br/><br/>
+
+	<form name="update_user" method="post" action="product_cat_edit.php">
+		<table border="0">
+			<tr>
+				<td>Category Name</td>
+				<td><input type="text" name="c_name" value=<?php echo $c_name;?>></td>
+			</tr>
+			<tr>
+				<td>Category Description</td>
+				<td><input type="text" name="parent_cat_id" value=<?php echo $parent_cat_id;?>></td>
+			</tr>
+			 
+            <tr>
+				<td>Category Status</td>
+                <td><select name="c_status">
+                              <option value="Active">Active</option>
+                              <option value="DeActive">DeActive</option>
+                         </select>
+
+              </td>
+				 
+			</tr>
+			<tr>
+				<td><input type="hidden" name="c_id" value=<?php echo $_GET['c_id'];?>></td>
+				<td><input type="submit" name="update" value="Update"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Slider - Range slider</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  
+   <style type="text/css">
+  .pr_list{
+  width:180px;
+  height:220px;
+  float:left;
+  padding:2px;
+  margin:2px;
+  border:1px solid #CCCCCC;
+   }
+  
+  </style>
+  
+  
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+  <script>
+  $( function() {
+  	
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 100000,
+      values: [ 5000, 20000 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      }
+    });
+    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+  
+  
+  
+   
+  
+  
+  
+  
+    var loader="<img src='images/ajax-loader.gif' />";
+   
+  $('.ui-slider-handle').on('click',function(){
+	  $('.content').html(loader);
+  
+  	  var min_price=$( "#slider-range" ).slider( "values", 0 );
+	  var max_price=$( "#slider-range" ).slider( "values", 1 );
+	  
+	
+	
+	var qs="min_price="+min_price+"&max_price="+max_price;
+		//alert(ctr_id);
+		
+		$.ajax({
+			url:'products.php',
+			type:'GET',
+			data:qs,
+			success:function(output){
+					$('.content').fadeOut('slow',function(){
+						$('.content').html(output).fadeIn('fast');
+					
+					});
+					
+				
+					}
+		
+		});
+	
+	 
+  
+  });
+  
+  
+  
+  
+  } );
+  </script>
+</head>
+<body>
+ 
+ 
+ <div style="float:left; width:26%">
+ 
+	<p>
+	  <label for="amount">Price range:</label>
+	  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+	</p>
+	 
+	<div id="slider-range"></div>
+	 
+ 
+ 
+ </div>
+ 
+ 
+ <div class="content" style="float:left; width:65%; padding:4%">
+ 
+
+</div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</body>
+</html>
